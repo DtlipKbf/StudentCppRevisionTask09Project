@@ -28,5 +28,15 @@
 */
 
 bool task02(int n) {
-	return (n % 2 == 0) && n > 0;
+	//cout << n << endl;
+	if (n <= 0) {
+		return false;
+	}
+	bool result = false;
+
+	for (int i = 2; n > 0; n /= 2) {
+		result = (n % 2 == 0) ? true: false;
+	}
+
+	return result;
 }

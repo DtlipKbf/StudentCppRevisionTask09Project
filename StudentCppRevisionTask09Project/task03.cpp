@@ -22,5 +22,16 @@
 */
 
 string task03(int n) {
-	return "";
+	cout << n << endl;
+	string msg = "";
+
+	if (n < 0) {
+		return to_string(0);
+	}
+
+	for (int i = 1; i <= n; i++) {
+		msg += to_string(i * i) + " ";
+	}
+
+	return msg;
 }
