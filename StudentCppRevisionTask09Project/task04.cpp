@@ -38,6 +38,5 @@ string task04(int n) {
 		msg += " " + to_string(num);
 		num *= 2;
 	}
-	cout << n << endl;
 	return msg;
 }

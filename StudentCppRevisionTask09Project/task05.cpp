@@ -23,5 +23,13 @@
 *	[output 4]: 2
 */
 int task05(long n) {
-	return 0;
+	cout << n << endl;
+	if (n < 0)n *= -1;
+	int count = 0;
+	if (n == 0) count = 1;
+	while (n > 0) {
+		n /= 10;
+		count++;
+	}
+	return count;
 }
