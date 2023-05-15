@@ -25,5 +25,19 @@
 */
 
 string task04(int n) {
-	return "";
+	string msg = "1";
+
+	if (n <= 0) {
+		msg = to_string(0);
+		return msg;
+	}
+
+	int num = 2;
+	
+	while (num <= n) {
+		msg += " " + to_string(num);
+		num *= 2;
+	}
+	cout << n << endl;
+	return msg;
 }

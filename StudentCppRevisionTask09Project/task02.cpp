@@ -28,7 +28,7 @@
 */
 
 bool task02(int n) {
-	cout << n << endl;
+	//cout << n << endl;
 	if (n <= 0) {
 		return false;
 	}
