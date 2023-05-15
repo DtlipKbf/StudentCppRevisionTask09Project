@@ -28,15 +28,16 @@
 */
 
 bool task02(int n) {
-	//cout << n << endl;
+	cout << n << endl;
 	if (n <= 0) {
 		return false;
 	}
-	bool result = false;
-
-	for (int i = 2; n > 0; n /= 2) {
-		result = (n % 2 == 0) ? true: false;
+	if (n == 0) {
+		return true;
 	}
-
-	return result;
+	int copy = 2;
+	while (copy <= n) {
+		copy *= 2;
+	}
+	return (copy == n) ? true : false;
 }
