@@ -28,6 +28,14 @@
 */
 
 int task07(long n) {
-	return 0;
+	if (n < 0)n *= -1;
+	if (n == 0) return 0;
 
+	int min = n % 10;
+	while (n > 0) {
+		min = (n % 10 < min) ? n % 10 : min;
+		n /= 10;
+	}
+	
+	return min;
 }
